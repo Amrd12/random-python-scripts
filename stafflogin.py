@@ -59,7 +59,7 @@ def main(number , sec):
         else:
             print("Already connected.")
         # Sleep for ~1 hour before checking again
-        time.sleep(3)
+        time.sleep(sec)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Login Script")
