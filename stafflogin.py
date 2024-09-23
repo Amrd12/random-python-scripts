@@ -64,6 +64,6 @@ def main(number , sec):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Login Script")
     parser.add_argument('--n', required=True, help="user name number")
-    parser.add_argument('--s', required=True, help="sec between 2 checks")
+    parser.add_argument('--s', required=False, help="sec between 2 checks", default= 3)
     args = parser.parse_args()
     main(args.n , args.s)
