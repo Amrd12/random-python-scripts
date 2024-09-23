@@ -9,4 +9,12 @@ headers = { "User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKi
 s = requests.session()
 s.post("http://192.168.1.1/start.ghtml",data=token , headers=headers)
 req = s.get(url ="http://192.168.1.1/start.ghtml",headers = headers)
-print(req.text,req.status_code)
+pay = {
+    "IF_ACTION": "devrestart",
+    "IF_ERRORSTR": "SUCC",
+    "IF_ERRORPARAM": "SUCC",
+    "IF_ERRORTYPE": -1,
+    "flag": 1,
+    "_SESSION_TOKEN": 5
+}
+s.post("http://192.168.1.1/getpage.gch?pid=1002&nextpage=manager_dev_conf_t.gch" , headers=headers,data=pay )

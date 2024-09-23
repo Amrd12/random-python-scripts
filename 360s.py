@@ -3,8 +3,8 @@ from inputs import get_gamepad
 import keyboard
 
 # Define your Xbox controller button mappings
-BACK_BUTTON = 'BTN_GAMEPAD'  # Replace with the correct button ID for "Back"
-START_BUTTON = 'BTN_GAMEPAD'  # Replace with the correct button ID for "Start"
+BACK_BUTTON =  'BTN_START' # Replace with the correct button ID for "Back"
+START_BUTTON = 'BTN_SELECT'  # Replace with the correct button ID for "Start"
 
 # Define the key combination to trigger the screenshot (Alt + F1)
 SCREENSHOT_SHORTCUT = 'alt+f1'#win+print_sscreen +f1
